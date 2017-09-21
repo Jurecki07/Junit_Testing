@@ -2,17 +2,16 @@
 
 
 public class MethodsClass {
-    public static boolean containsOne(int n) {
-        if (n % 10 == 1) {
 
-            String checkString = Integer.toString(n);
-            return (checkString.contains("1"));
-        }
-        return false;
+    public static boolean containsOne(int n) throws BadInputExc {
+        if (n < 0)
+        throw new BadInputExc();
+
+
+        String numString = "" + n; //Convert the number to a string
+        return numString.contains("1"); //Check to see if it contains 1
     }
-
 }
-
 
 
 // String checkString = Integer.toString(n);
