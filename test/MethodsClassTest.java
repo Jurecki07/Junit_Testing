@@ -18,11 +18,11 @@ public class MethodsClassTest {
     }
 
     @Test
-    public void testBasicCase() throws Exception {
+    public void containsOne() throws Exception {
         System.out.println("Running basic test");
         assertTrue(MethodsClass.containsOne(1));
         assertFalse(MethodsClass.containsOne(2));
-
+// Grabbing the MethodClass from Methods file. Applying the method
     }
 
 }
