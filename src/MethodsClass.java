@@ -3,8 +3,26 @@
 
 public class MethodsClass {
 
+    private static final int SPEED_LIMIT =  60;
+    private static final Object HIGHS_SPEED = 80;
+
     public static int caughtSpeeding (int speed, boolean isBirthday) {
-        return -2; //Always fail first
+
+        int returnValue = -2;
+
+        if (speed > SPEED_LIMIT) returnValue =0;
+        if (speed > SPEED_LIMIT && speed <= HIGHS_SPEED) {
+
+            if (isBirthday) {
+                // Bump up speed Limit += 5 Its a constatnt so what if we changed it
+
+            }
+        }
+
+
+            returnValue =1;
+
+        return returnValue ; //Always fail first
     }
 
     public static boolean containsOne(int n) throws BadInputExc {

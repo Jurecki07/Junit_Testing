@@ -50,9 +50,12 @@ public class MethodsClassTest {
 
     @Test
     public void caughtspeedingtest() throws Exception{
-
+        assertTrue(MethodsClass.caughtSpeeding(60, false) == 0);
+        //caughtSpeeding(65, false) → 1
+        //caughtSpeeding(65, true) → 0
 
     }
+    // Static so you can do caught speeding with the name of the method or create assertions
 
 
 }
