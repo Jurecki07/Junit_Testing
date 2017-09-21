@@ -48,5 +48,11 @@ public class MethodsClassTest {
         assertFalse(MethodsClass.containsOne(986974958));
     }
 
+    @Test
+    public void caughtspeedingtest() throws Exception{
+
+
+    }
+
 
 }

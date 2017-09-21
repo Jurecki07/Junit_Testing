@@ -3,6 +3,10 @@
 
 public class MethodsClass {
 
+    public static int caughtSpeeding (int speed, boolean isBirthday) {
+        return -2; //Always fail first
+    }
+
     public static boolean containsOne(int n) throws BadInputExc {
         if (n < 0)
         throw new BadInputExc();
