@@ -4,23 +4,30 @@
 public class MethodsClass {
 
     private static final int SPEED_LIMIT =  60;
-    private static final Object HIGHS_SPEED = 80;
+    private static final int HIGH_SPEED = 80;
 
     public static int caughtSpeeding (int speed, boolean isBirthday) {
 
         int returnValue = -2;
+        int speedLimit = SPEED_LIMIT;
+        int highSpeed = HIGH_SPEED;
 
-        if (speed > SPEED_LIMIT) returnValue =0;
-        if (speed > SPEED_LIMIT && speed <= HIGHS_SPEED) {
+        if (isBirthday) {
+            highSpeed += 5;
+            speedLimit +=5;
+        }
+        if (speed<= speedLimit)
+            returnValue =0;
 
-            if (isBirthday) {
-                // Bump up speed Limit += 5 Its a constatnt so what if we changed it
+        else if (speed > SPEED_LIMIT) returnValue = 0;
+        else if(speed > SPEED_LIMIT && speed <= HIGH_SPEED) returnValue =1; {
+            else returnValue = 2;
 
-            }
+           return returnValue = 2;
+
         }
 
 
-            returnValue =1;
 
         return returnValue ; //Always fail first
     }

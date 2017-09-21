@@ -51,7 +51,7 @@ public class MethodsClassTest {
     @Test
     public void caughtspeedingtest() throws Exception{
         assertTrue(MethodsClass.caughtSpeeding(60, false) == 0);
-        //caughtSpeeding(65, false) → 1
+        asserTrue(caughtSpeeding(65, false) → 1
         //caughtSpeeding(65, true) → 0
 
     }
