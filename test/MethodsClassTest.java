@@ -6,6 +6,7 @@ import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.*;
 
+
 public class MethodsClassTest {
     @Rule //Another annotation directed to JUnit
     public ExpectedException expected = ExpectedException.none();
@@ -50,8 +51,10 @@ public class MethodsClassTest {
 
     @Test
     public void caughtspeedingtest() throws Exception{
-        assertTrue(MethodsClass.caughtSpeeding(60, false) == 0);
-        asserTrue(caughtSpeeding(65, false) → 1
+        assertTrue(MethodsClass.caughtSpeeding(59, false) == 0);
+        assertTrue(MethodsClass.caughtSpeeding(59, true) == 0);
+
+
         //caughtSpeeding(65, true) → 0
 
     }
